@@ -90,7 +90,7 @@ const StartTest = ({ Active, setState }) => {
   const [timer, setTimer] = useState(0);
   const [wpm, setWpm] = useState(0);
   const [reset, setReset] = useState(false);
-  const [accuracy, setAccuracy] = useState(0); // Accuracy percentage
+  const [accuracy, setAccuracy] = useState(100); // Accuracy percentage
 
   useEffect(() => {
     const randonNumber = Math.floor(Math.random() * 5);
