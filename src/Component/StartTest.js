@@ -204,19 +204,16 @@ const StartTest = ({ Active, setState }) => {
             ></textarea>
           </div>
           <div className="text-lg text-left px-16 pt-5">Speed WPM: {wpm}</div>
-          {isRunning === true ? (
-            <div className={`text-lg text-left px-16 pt-5 `}>
-              Accuracy:{" "}
-              <span
-                className={`${
-                  accuracy >= 85 ? "text-green-400" : "text-red-400"
-                }`}
-              >
-                {accuracy}%
-              </span>
-            </div>
-          ) : null}
-
+          <div className={`text-lg text-left px-16 pt-5 `}>
+            Accuracy:{" "}
+            <span
+              className={`${
+                accuracy >= 85 ? "text-green-400" : "text-red-400"
+              }`}
+            >
+              {accuracy}%
+            </span>
+          </div>
           {reset === true ? (
             <Button
               title={"Restart"}
